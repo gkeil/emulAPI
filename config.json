@@ -1,0 +1,5 @@
+{
+    "emul_ip_add": 		"192.168.0.65",
+    "emul_port": 		"8500",
+    "respfile_name" : 	"master.json"
+}

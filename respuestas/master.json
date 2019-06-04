@@ -1,0 +1,5 @@
+[
+{ "path" : "/uno", "method": "GET"  ,  "archivo_resp": "unoget.json" },
+{ "path" : "/uno", "method": "POST" ,  "archivo_resp": "unopost.json" },
+{ "path" : "/dos", "method": "GET"  ,  "archivo_resp": "dosget.json" }
+]
