@@ -27,3 +27,13 @@ ejemplo:
     { "path" : "/dos", "method": "GET"  ,  "archivo_resp": "dosget.json" }
     ]
 Los archivos JSON indicados en la lista de respuesta se usan para conformar el body de la respuesta
+
+Para correr el simulador:
+
+
+    php emulAPI.php
+
+Es una aplicación CLI
+La aplicación queda corriendo y muestra en la consola el request, response y mensajes de eroor.
+El archivo de listas se abre y se cierra en cada request, por lo que puede editarse sin dejar de correr la aplicación
+Lo mismo para los archivos de respuesta.
