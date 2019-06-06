@@ -43,7 +43,7 @@ final class ValidaURI
        // verifica existencia y formato del archivo de lista de respuestas
        $respuestas = $this->verifica_lista_de_respuestas();
               
-       // busca respuesta para el pth requerido 
+       // busca respuesta para el path requerido 
        $resp_file = $this->buscar_respuesta( $request, $respuestas );
        
        // si no hay respuesta enviar error http

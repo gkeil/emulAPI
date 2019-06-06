@@ -53,7 +53,7 @@ final class CrearRespuesta
              throw new Exception("Error leyendo " . basename($full_path_resp_file). " \n");
        
         // mostrar respuesta en consola
-        echo "Respuesta: \n";
+        echo " ---------------- Respuesta: -----------------\n";
         echo $body."\n";
         
         

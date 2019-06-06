@@ -34,11 +34,19 @@ final class LogRequest
     {
         
         // mostrar la info del request
-        echo "min:seg ".date('i:s')."\n";
-        echo "REQUEST recibido\n";
-        echo "METODO: ".$request->getMethod()."\n";
-        echo "PATH: ".$request->getUri()->getPath()."\n";
+        echo "REQUEST recibido  @min:seg ".date('i:s')."\n";
+        echo "METODO: ".$request->getMethod()."    PATH: ".$request->getUri()->getPath()."\n";
         
+        echo " ------------- Headers ----------------\n";      
+        $headers = $request->getHeaders();
+        foreach ($headers as $hdr => $val)
+        {
+            echo $hdr." : ".implode(",",$val)."\n";
+        }
+                
+        echo " -------------- body ------------------\n";
+        $body = $request->getBody()->getContents();
+        echo $body."\n";
         
         // continue with next Midddleware task
         return $next($request);     
